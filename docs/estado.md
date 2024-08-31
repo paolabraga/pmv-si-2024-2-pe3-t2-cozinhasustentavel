@@ -1,10 +1,2 @@
 # 2. ESTADO DA ARTE
-O estado da arte é um mapeamento de toda a produção acadêmica sobre um assunto específico, aqui especificamente sobre o tema escolhido para o seu trabalho. A ideia consiste em reunir as conclusões que outras pesquisas científicas chegaram sobre um determinado assunto. Neste momento você deverá buscar respostas para as seguintes perguntas:
-
-1.	Quais pesquisas estão sendo desenvolvidas sobre esse tema?
-2.	Quem está pesquisando e onde?
-3.	O que as atuais pesquisas científicas concluíram sobre o tema? 
-4.	Quais as divergências dos pesquisadores sobre o assunto? 
-5.	Quais aspectos carecem de maior abordagem?
-
-É importante referenciar estas pesquisas, fazendo as devidas citações de acordo com as normas da ABNT e colocando as referências completas ao final do trabalho.
+  Os alunos Iracilma da Silva Sampaio, Enia Maria Ferst e Josimara Cristina de Carvalho Oliveira da Universidade Estadual de Roraima – UERR realizaram um trabalho (SAMPAIO; FERST; OLIVEIRA, 2017) sobre a questão do desperdício de alimentos e como manter uma alimentação saudável através de alimentos que são descartados durante o seu preparo, nesse trabalho participaram  27 alunos do 4º ano do Ensino Fundamental e a metodologia usada envolveu os conhecimentos prévios da turma, exposição de vídeos e degustação de alimentos. No final foi concluído que o desperdício dos alimentos pode ser evitado através de um planejamento e de um trabalho educacional na escola, além de que, uma alimentação alternativa pode melhorar a nutrição, servir de auxílio para a economia dos indivíduos, e também auxiliar na diminuição do lixo que é produzido.
