@@ -31,19 +31,33 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 
 | Código | Requisito Funcional (Funcionalidade) | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF1 | Gerenciar Curso de Aperfeiçoamento |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Cursos de Aperfeiçoamento |
-| RF2 |	Gerenciar Professor	| Processamento de Inclusão, Alteração, Exclusão e Consulta de professores |
-| RF3	| Gerenciar Matrícula |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Matrículas de alunos em Cursos de Aperfeiçoamento |
-| ... |	...	| ... |
+| RF1 | Gerenciar receitas |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Receitas |
+| RF2 |	Gerenciar usuários	| Processamento de Inclusão, Alteração, Exclusão e Consulta de Usuários |
+| RF3	| Gerenciar avaliações de receitas |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Avaliações de Receitas |
+| RF4 |	Gerenciar favoritos	| Processamento de Inclusão, Exclusão e Consulta de Favoritos |
+| RF5 | Gerenciar alimentos/ingredientes	| Processamento de Inclusão, Exclusão e Consulta de Ingredientes (apenas para admin) |
+| RF6 | Gerenciar comentários de cada receita	| Processamento de Inclusão, Exclusão e Consulta de Comentários |
+| RF7 |	Gerenciar categorias	| Processamento de Inclusão, Exclusão e Consulta de Categorias (apenas para admin) |
+| RF8 |	Busca com filtro	| Busca por nome da receita, por ingredientes (podendo adicionar mais de um por vez) ou categorias |
+| RF9 |	Barra de sugestões	| Listar sugestões de receitas relacionadas com o que o usuário já pesquisou |
+| RF10 | Gerenciar solicitação de adição de ingredientes	| Processamento de Inclusão, Alteração, Exclusão e Consulta de Solicitações para adicionar mais ingredientes no sistema |
+| RF11 | Notificações de novas receitas | Envio de notificação para usuários quando novas receitas de gostos similares forem adicionadas |
+| RF12 | Gerenciar preferências | Processamento de Inclusão, Alteração, Exclusão e Consulta de Preferências para sugestões e notificações de receitas |
+
+- gerenciar cardápios?
+- parceria com restaurantes?
+- lista de casa/compras
 
 ### 3.3.2 Requisitos Não Funcionais
 
 | Código | Requisito Não Funcional (Restrição) |
 |--------------------|------------------------------------|
-| RNF1 | O ambiente operacional a ser utilizado é o Windows XP. |
-| RNF2 | O sistema deverá executar em um computador configurado com uma impressora de tecnologia laser ou de jato de tinta, a ser usada para impressão dos relatórios. |
-| RNF3 |	Segurança	O produto deve restringir o acesso por meio de senhas individuais para o usuário. |
-| ... |	... |	... |
+| RNF1 | O ambiente operacional a ser utilizado é o Windows 10/11. |
+| RNF2 | Responsividade para telas mobile. |
+| RNF3 |	O produto deve restringir o acesso por meio de senhas individuais para o usuário. |
+| RFN4 |	O sistema deve ser codificado usando javascript. |
+| RFN5 | O sistema deve ser compatível com navegador Chrome e Firefox. |
+| RFN6 | O sistema deve ser capaz de fazer uma busca em menos de 2 minutos. |
 
 ### 3.3.3 Usuários 
 
@@ -117,7 +131,7 @@ A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a i
 
 #### Figura 2: Diagrama de Classes do Sistema.
  
-![dcu](https://github.com/user-attachments/assets/97ab1aa8-eb03-4b58-9ad5-1697d414a451)
+![image](https://github.com/user-attachments/assets/2d6c2381-7883-44b5-8623-abca7def1d04)
 
 ### 3.4.4 Descrições das Classes 
 
