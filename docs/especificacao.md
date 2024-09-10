@@ -76,7 +76,8 @@ Como observado no diagrama de casos de uso da Figura 1, a secretária poderá ge
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-![dcu](https://github.com/user-attachments/assets/41f6b731-b44e-43aa-911f-423ad6198f47)
+![image](https://github.com/user-attachments/assets/3f6ff38e-764b-4c41-a71a-88c42fa1fbf8)
+
  
 ### 3.4.2 Descrições de Casos de Uso
 
