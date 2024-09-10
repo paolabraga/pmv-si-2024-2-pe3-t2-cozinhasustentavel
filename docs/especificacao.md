@@ -39,7 +39,7 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 | RF6 | Gerenciar comentários de cada receita	| Processamento de Inclusão, Exclusão e Consulta de Comentários |
 | RF7 |	Gerenciar categorias	| Processamento de Inclusão, Exclusão e Consulta de Categorias (apenas para admin) |
 | RF8 |	Busca com filtro	| Busca por nome da receita, por ingredientes (podendo adicionar mais de um por vez) ou categorias |
-| RF9 |	Barra de sugestões	| Listar sugestões de receitas relacionadas com o que o usuário já pesquisou |
+| RF9 |	Gerenciar sugestões	| Listar sugestões de receitas relacionadas com o que o usuário já pesquisou |
 | RF10 | Gerenciar solicitação de adição de ingredientes	| Processamento de Inclusão, Alteração, Exclusão e Consulta de Solicitações para adicionar mais ingredientes no sistema |
 | RF11 | Notificações de novas receitas | Envio de notificação para usuários quando novas receitas de gostos similares forem adicionadas |
 | RF12 | Gerenciar preferências | Processamento de Inclusão, Alteração, Exclusão e Consulta de Preferências para sugestões e notificações de receitas |
@@ -66,7 +66,7 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 |--------------------|------------------------------------|
 | Adimin |	Usuário gerente do sistema responsável pelo cadastro e manutenção de novos itens. Possui acesso geral ao sistema. |
 | Usuário |	Usuário responsável por registros de receita, comentarios, e avaliações. |
-| ... |	... |	... |
+| Sistema |	Cuida de funcionalidades automatizadas |
 
 ## 3.4 Modelagem do Sistema
 
