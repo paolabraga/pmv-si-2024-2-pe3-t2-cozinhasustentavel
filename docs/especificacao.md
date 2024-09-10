@@ -43,6 +43,7 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 | RF10 | Gerenciar solicitação de adição de ingredientes	| Processamento de Inclusão, Alteração, Exclusão e Consulta de Solicitações para adicionar mais ingredientes no sistema |
 | RF11 | Notificações de novas receitas | Envio de notificação para usuários quando novas receitas de gostos similares forem adicionadas |
 | RF12 | Gerenciar preferências | Processamento de Inclusão, Alteração, Exclusão e Consulta de Preferências para sugestões e notificações de receitas |
+| RF13 | Seguir usuários | Processamento de Inclusão, Alteração, Exclusão e Consulta de Preferências para sugestões e notificações de receitas |
 
 - gerenciar cardápios?
 - parceria com restaurantes?
@@ -137,9 +138,9 @@ A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a i
 
 | # | Nome | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| 1	|	Aluno |	Cadastro de informações relativas aos alunos. |
-| 2	| Curso |	Cadastro geral de cursos de aperfeiçoamento. |
-| 3 |	Matrícula |	Cadastro de Matrículas de alunos nos cursos. |
-| 4 |	Turma |	Cadastro de turmas.
-| 5	|	Professor |	Cadastro geral de professores que ministram as disciplinas. |
-| ... |	... |	... |
+| 1	|	Usuário |	Cadastro de informações relativas aos usuários. |
+| 2	| Itens |	Cadastro geral de itens e ingredientes. |
+| 3 |	Receita |	Cadastro de receitas. |
+| 4 |	Avaliação |	Cadastro de avaliação de uma receita. |
+| 5	|	Comentario |	Cadastro de comentarios de uma receita. |
+| 6	|	Categoria |	Cadastro de categoria para ingredientes. |
