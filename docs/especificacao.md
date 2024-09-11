@@ -141,7 +141,7 @@ A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a i
 | # | Nome | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
 | 1	|	Usuário |	Cadastro de informações relativas aos usuários. |
-| 2	| Itens |	Cadastro geral de itens e ingredientes. |
+| 2	| Ingredientes |	Cadastro geral de itens e ingredientes. |
 | 3 |	Receita |	Cadastro de receitas. |
 | 4 |	Avaliação |	Cadastro de avaliação de uma receita. |
 | 5	|	Comentário |	Cadastro de comentários de uma receita. |
