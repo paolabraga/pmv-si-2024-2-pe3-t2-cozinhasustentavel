@@ -37,14 +37,15 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 | RF4 |	Gerenciar favoritos	| Processamento de Inclusão, Exclusão e Consulta de Favoritos |
 | RF5 | Gerenciar alimentos/ingredientes	| Processamento de Inclusão, Exclusão e Consulta de Ingredientes (apenas para admin) |
 | RF6 | Gerenciar comentários de cada receita	| Processamento de Inclusão, Exclusão e Consulta de Comentários |
-| RF7 |	Gerenciar categorias	| Processamento de Inclusão, Exclusão e Consulta de Categorias (apenas para admin) |
-| RF8 |	Busca com filtro	| Busca por nome da receita, por ingredientes (podendo adicionar mais de um por vez) ou categorias |
-| RF9 |	Gerenciar sugestões	| Listar sugestões de receitas relacionadas com o que o usuário já pesquisou |
-| RF10 | Requisitar a adição de ingredientes	| Processamento de Inclusão, Alteração e Exclusão de Solicitações para adicionar mais ingredientes no sistema |
-| RF11 | Gerenciar solicitação de adição de ingredientes	| Processamento de Exclusão e Consulta de Solicitações para adicionar mais ingredientes no sistema (apenas para admin) |
-| RF12 | Notificações de novas receitas | Envio de notificação para usuários quando novas receitas de gostos similares forem adicionadas |
-| RF13 | Gerenciar preferências | Processamento de Inclusão, Alteração, Exclusão e Consulta de Preferências para sugestões e notificações de receitas |
-| RF14 | Seguir usuários | Processamento de Inclusão, Alteração, Exclusão e Consulta de Preferências para sugestões e notificações de receitas |
+| RF7 |	Gerenciar categorias de receitas	| Processamento de Inclusão, Exclusão e Consulta de Categorias de Receitas (apenas para admin) |
+| RF8 |	Gerenciar categorias de ingredientes	| Processamento de Inclusão, Exclusão e Consulta de Categorias de Ingredientes (apenas para admin) |
+| RF9 |	Busca com filtro	| Busca por nome da receita, por ingredientes (podendo adicionar mais de um por vez) ou categorias |
+| RF10 |	Gerenciar sugestões	| Listar sugestões de receitas relacionadas com o que o usuário já pesquisou |
+| RF11 | Requisitar a adição de ingredientes	| Processamento de Inclusão, Alteração e Exclusão de Solicitações para adicionar mais ingredientes no sistema |
+| RF12 | Gerenciar solicitação de adição de ingredientes	| Processamento de Exclusão e Consulta de Solicitações para adicionar mais ingredientes no sistema (apenas para admin) |
+| RF13 | Notificações de novas receitas | Envio de notificação para usuários quando novas receitas de gostos similares forem adicionadas |
+| RF14 | Gerenciar preferências | Processamento de Inclusão, Alteração, Exclusão e Consulta de Preferências para sugestões e notificações de receitas |
+| RF15 | Seguir usuários | Processamento de Inclusão, Alteração, Exclusão e Consulta de Preferências para sugestões e notificações de receitas |
 
 - gerenciar cardápios?
 - parceria com restaurantes?
@@ -145,4 +146,5 @@ A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a i
 | 3 |	Receita |	Cadastro de receitas. |
 | 4 |	Avaliação |	Cadastro de avaliação de uma receita. |
 | 5	|	Comentário |	Cadastro de comentários de uma receita. |
-| 6	|	Categoria |	Cadastro de categoria para ingredientes. |
+| 6	|	Categoria de ingrediente |	Cadastro de categoria para ingredientes. |
+| 7	|	Categoria de receita |	Cadastro de categoria para receita. |
