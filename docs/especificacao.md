@@ -34,21 +34,22 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 | RF1 | Gerenciar receitas |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Receitas |
 | RF2 |	Gerenciar usuários	| Processamento de Inclusão, Alteração, Exclusão e Consulta de Usuários |
 | RF3	| Gerenciar avaliações de receitas |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Avaliações de Receitas |
-| RF4 |	Gerenciar favoritos	| Processamento de Inclusão, Exclusão e Consulta de Favoritos |
+| RF4 |	Gerenciar receitas favoritadas	| Processamento de Inclusão, Exclusão e Consulta de receitas na lista de receitas favoritadas de um usuário |
 | RF5 | Gerenciar alimentos/ingredientes	| Processamento de Inclusão, Exclusão e Consulta de Ingredientes (apenas para admin) |
 | RF6 | Gerenciar comentários de cada receita	| Processamento de Inclusão, Exclusão e Consulta de Comentários |
 | RF7 |	Gerenciar categorias de receitas	| Processamento de Inclusão, Exclusão e Consulta de Categorias de Receitas (apenas para admin) |
 | RF8 |	Gerenciar categorias de ingredientes	| Processamento de Inclusão, Exclusão e Consulta de Categorias de Ingredientes (apenas para admin) |
-| RF10 |	Gerenciar sugestões	| Listar sugestões de receitas relacionadas com o que o usuário já pesquisou |
-| RF11 | Requisitar a adição de ingredientes	| Processamento de Inclusão de Solicitações para adicionar mais ingredientes no sistema |
-| RF12 | Gerenciar solicitação de adição de ingredientes	| Processamento de Exclusão e Consulta de Solicitações para adicionar mais ingredientes no sistema (apenas para admin) |
-| RF13 | Notificações de novas receitas | Envio de notificação para usuários quando novas receitas de gostos similares forem adicionadas |
-| RF14 | Gerenciar preferências | Processamento de Inclusão, Alteração, Exclusão e Consulta de Preferências para sugestões e notificações de receitas |
-| RF15 | Seguir usuários | Processamento de Inclusão, Alteração, Exclusão e Consulta de Preferências para sugestões e notificações de receitas |
-
-- gerenciar cardápios?
-- parceria com restaurantes?
-- lista de casa/compras
+| RF9 |	Gerenciar sugestões	| Listar sugestões de receitas relacionadas com o que o usuário já pesquisou |
+| RF10 | Requisitar a adição de ingredientes	| Processamento de Inclusão de Solicitações para adicionar mais ingredientes no sistema |
+| RF11 | Gerenciar solicitação de adição de ingredientes	| Processamento de Consulta, Aprovação e Rejeição de Solicitações para adicionar mais ingredientes no sistema (apenas para admin) |
+| RF12 | Enviar notificações de novas receitas | Envio de notificação para usuários quando novas receitas de gostos similares forem adicionadas |
+| RF13 | Gerenciar preferências | Processamento de Inclusão, Alteração, Exclusão e Consulta de Preferências para sugestões e notificações de receitas |
+| RF14 | Gerenciar usuários seguidos | Processamento de Inclusão, Exclusão e Consulta de usuários seguidos por outro usuário |
+| RF15 | Visualizar usuários seguidores | Consulta de usuários seguidores |
+| RF16 | Gerenciar cardápios | Processamento de Inclusão, Alteração, Exclusão e Consulta de Cardápios utilizando receitas escolhidas pelo usuário |
+| RF17 | Visualizar restaurantes parceiros | Consulta de informações e receitas criadas por restaurantes parceiros |
+| RF18 | Visualizar nutricionistas parceiros | Consulta de informações e receitas criadas por nutricionistas parceiros |
+| RF19 | Gerenciar lista de casa/compras | Processamento de Alteração e Consulta da lista de ingredientes que o usuário possui em casa e da lista dos que precisam ser comprados para uma receita de sua escolha |
 
 ### 3.3.2 Requisitos Não Funcionais
 
@@ -65,9 +66,9 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 
 | Ator | Descrição |
 |--------------------|------------------------------------|
-| Adimin |	Usuário gerente do sistema responsável pelo cadastro e manutenção de novos itens. Possui acesso geral ao sistema. |
+| Administrador |	Usuário gerente do sistema responsável pelo cadastro e manutenção de novos itens. Possui acesso geral ao sistema. |
 | Usuário |	Usuário responsável por registros de receita, comentarios, e avaliações. |
-| Sistema |	Cuida de funcionalidades automatizadas |
+
 
 ## 3.4 Modelagem do Sistema
 
@@ -149,5 +150,5 @@ A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a i
 | 6	|	Comentário |	Cadastro de comentários de uma receita. |
 | 7	|	Categoria de ingrediente |	Cadastro de categoria para ingredientes. |
 | 8	|	Categoria de receita |	Cadastro de categoria para receitas. |
-| 9	|	Preferencias |	Cadastro de categorias como preferidas. |
+| 9	|	Preferências |	Cadastro de categorias como preferidas. |
 | 10	|	Solicitação |	Cadastro de solicitação de ingredientes e de categorias. |
