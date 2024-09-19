@@ -47,9 +47,8 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 | RF14 | Gerenciar usuários seguidos | Processamento de Inclusão, Exclusão e Consulta de usuários seguidos por outro usuário |
 | RF15 | Visualizar usuários seguidores | Consulta de usuários seguidores |
 | RF16 | Gerenciar cardápios | Processamento de Inclusão, Alteração, Exclusão e Consulta de Cardápios utilizando receitas escolhidas pelo usuário |
-| RF17 | Gerenciar restaurantes parceiros | Processamento de Inclusão, Alteração, Exclusão e Consulta de informações e receitas criadas por restaurantes parceiros |
-| RF18 | Gerenciar nutricionistas parceiros | Processamento de Inclusão, Alteração, Exclusão e Consulta de informações e receitas criadas por nutricionistas parceiros |
-| RF19 | Gerenciar lista de casa/compras | Processamento de Alteração e Consulta da lista de ingredientes que o usuário possui em casa e da lista dos que precisam ser comprados para uma receita de sua escolha |
+| RF17 | Gerenciar lista de casa/compras | Processamento de Alteração e Consulta da lista de ingredientes que o usuário possui em casa e da lista dos que precisam ser comprados para uma receita de sua escolha |
+| RF18 | Tornar o perfil parceiro (nutricionistas/restaurantes) | Usuário pode pagar para tornar seu perfil parceiro |
 
 ### 3.3.2 Requisitos Não Funcionais
 
