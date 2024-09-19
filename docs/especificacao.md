@@ -131,7 +131,7 @@ Pós-condições: Um professor foi inserido ou removido, seus dados foram altera
 
 ### 3.4.3 Diagrama de Classes 
 
-A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a identificação do funcionário responsável pelo registro, bem com os dados do aluno e turmas. Para uma disciplina podemos ter diversas turmas, mas apenas um professor responsável por ela.
+A Figura 2 mostra o diagrama de classes do sistema. Uma receita deve conter pelo menos um ingrediente e pode pertencer a várias categorias. Ela também pode possuir comentários e avaliações. O usuário pode abrir solicitações para adicionar novos ingredientes e categorias ao sistema, que podem ser aprovados ou rejeitados pelo administrador. O usuário também pode conter preferências.
 
 #### Figura 2: Diagrama de Classes do Sistema.
  
