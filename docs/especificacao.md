@@ -135,7 +135,8 @@ A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a i
 
 #### Figura 2: Diagrama de Classes do Sistema.
  
-![image](https://github.com/user-attachments/assets/2d6c2381-7883-44b5-8623-abca7def1d04)
+![image](https://github.com/user-attachments/assets/024d6a48-f922-4269-8f0b-21a06a9eea83)
+
 
 ### 3.4.4 Descrições das Classes 
 
