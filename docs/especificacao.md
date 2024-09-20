@@ -129,6 +129,56 @@ d)	O Sistema apresenta os detalhes do professor no formulário de professores. <
 
 Pós-condições: Um professor foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
 
+---
+
+#### Gerenciar Receitas (CSU01)
+
+Sumário: O Usuário realiza a gestão (inclusão, remoção, alteração e consulta) dos dados sobre as receitas.
+
+Ator Primário: Usuário.
+
+Pré-condições: O Usuário deve estar cadastrado e logado no sistema.
+
+Fluxo Principal:
+
+1) 	O Usuário entra na página de suas receitas.
+2) 	O Sistema apresenta as operações que podem ser realizadas: inclusão de uma nova receita, alteração de uma receita, a exclusão de um receita e a consulta de dados de uma receita.
+3) 	O Usuário seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.
+4) 	Se o Usuário desejar continuar com a gestão de receitas, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+
+Fluxo Alternativo (1): Inclusão
+
+a)	O Usuário requisita a inclusão de uma receita. <br>
+b)	O Sistema apresenta uma janela solicitando o título da receita, os ingredientes, o modo de preparo e a categoria em que ela se encaixa, se disponível. <br>
+c)	O Usuário fornece as informações solicitadas. <br>
+d)	O Sistema verifica se o título ou o modo de preparo possuem algum caractere inválido, se sim ele mostra um erro ao Usuário para que os campos sejam corrigidos. Senão ele realiza a inclusão da nova receita. <br>
+
+Fluxo Alternativo (2): Remoção
+
+a)	O Usuário seleciona uma de suas receitas e requisita ao Sistema que a remova. <br>
+b)	Se a receita pode ser removida, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato. <br>
+
+Fluxo Alternativo (3): Alteração
+
+a)	O Usuário altera um ou mais dos detalhes da receita e requisita sua atualização. <br>
+b)	O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados na lista de receitas, caso contrário, o erro é reportado. <br>
+ 
+Fluxo Alternativo (4): Consulta 
+
+I) Fluxo se a receita for do usuário logado:
+a) O Usuário seleciona uma de suas receitas. <br>
+b)	O Sistema apresenta as informações da receita na página de detalhes da receita. <br>
+
+II) Fluxo se a receita for de outro usuário:
+a)	O Usuário opta por pesquisar por palavras do título da receita ou por categoria da receita e solicita a consulta sobre a lista de receitas. <br>
+b)	O Sistema apresenta uma lista de receitas. <br>
+c) O Usuário seleciona uma das receitas. <br>
+d)	O Sistema apresenta as informações da receita na página de detalhes da receita. <br>
+
+Pós-condições: Uma receita foi inserida ou removida, seus dados foram alterados ou apresentados na tela.
+
+
+
 ### 3.4.3 Diagrama de Classes 
 
 A Figura 2 mostra o diagrama de classes do sistema. Uma receita deve conter pelo menos um ingrediente e pode pertencer a várias categorias. Ela também pode possuir comentários e avaliações. O usuário pode abrir solicitações para adicionar novos ingredientes e categorias ao sistema, que podem ser aprovados ou rejeitados pelo administrador. O usuário também pode conter preferências.
