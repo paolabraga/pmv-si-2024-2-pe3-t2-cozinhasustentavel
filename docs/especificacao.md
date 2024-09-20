@@ -178,6 +178,39 @@ d)	O Sistema apresenta as informações da receita na página de detalhes da rec
 Pós-condições: Uma receita foi inserida ou removida, seus dados foram alterados ou apresentados na tela.
 
 
+#### Gerenciar usuários (CSU02)
+
+Sumário: O Usuário realiza a gestão (inclusão, remoção, alteração e consulta) dos dados sobre seu perfil.
+
+Ator Primário: Usuário.
+
+Pré-condições: Realização do fluxo de cadastro do Usuário e logar na aplicação.
+
+Fluxo de Inclusão: 
+
+a)	O Usuário acessa a página de cadastro. <br>
+b)	O Sistema apresenta uma janela solicitando seu nome completo, email e a senha que deseja usar. <br>
+c)	O Usuário fornece as informações solicitadas. <br>
+d)	O Sistema verifica se todos os campos contém informações válidas, se sim ele realiza a inclusão do novo Usuário. Senão mostra um erro ao Usuário para que os campos sejam corrigidos. <br>
+
+Fluxo Principal: Consulta
+
+1) 	O Usuário entra na sua página de perfil.
+2) 	O Sistema apresenta os dados do usuário e as operações que podem ser realizadas: alteração de seus dados pessoais e a exclusão de seu perfil.
+3) 	O Usuário seleciona a operação desejada: Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.
+4) 	Se o Usuário desejar continuar com a gestão de seu perfil, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+
+Fluxo Alternativo (1): Remoção
+
+a)	O Usuário seleciona a opção de excluir seu perfil. <br>
+b)	O Sistema realiza a remoção; caso contrário, o Sistema reporta o fato. <br>
+
+Fluxo Alternativo (2): Alteração
+
+a)	O Usuário altera um ou mais dos detalhes do seu perfil e requisita sua atualização. <br>
+b)	O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados no seu cadastro, caso contrário, o erro é reportado. <br>
+
+Pós-condições: Um usuário foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
 
 ### 3.4.3 Diagrama de Classes 
 
