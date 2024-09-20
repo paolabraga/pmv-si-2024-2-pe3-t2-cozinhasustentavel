@@ -177,6 +177,7 @@ d)	O Sistema apresenta as informações da receita na página de detalhes da rec
 
 Pós-condições: Uma receita foi inserida ou removida, seus dados foram alterados ou apresentados na tela.
 
+---
 
 #### Gerenciar usuários (CSU02)
 
