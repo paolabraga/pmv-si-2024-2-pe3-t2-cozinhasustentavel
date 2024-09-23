@@ -197,7 +197,7 @@ d)	O Sistema verifica se todos os campos contém informações válidas, se sim 
 Fluxo Principal: Consulta
 
 1) 	O Usuário entra na sua página de perfil.
-2) 	O Sistema apresenta os dados do usuário e as operações que podem ser realizadas: alteração de seus dados pessoais e a exclusão de seu perfil.
+2) 	O Sistema apresenta os dados do Usuário e as operações que podem ser realizadas: alteração de seus dados pessoais e a exclusão de seu perfil.
 3) 	O Usuário seleciona a operação desejada: Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.
 4) 	Se o Usuário desejar continuar com a gestão de seu perfil, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
 
@@ -211,10 +211,9 @@ Fluxo Alternativo (2): Alteração
 a)	O Usuário altera um ou mais dos detalhes do seu perfil e requisita sua atualização. <br>
 b)	O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados no seu cadastro, caso contrário, o erro é reportado. <br>
 
-Pós-condições: Um usuário foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
+Pós-condições: Um Usuário foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
 
 ---
-
 
 #### Gerenciar avaliações de receitas (CSU03)
 
@@ -226,8 +225,8 @@ Pré-condições: O Usuário deve estar cadastrado e logado no sistema.
 
 Fluxo Principal:
 
-1) 	O Usuário entra na página de uma receita que pertence a outro usuário.
-2) 	O Sistema apresenta as operações que podem ser realizadas: inclusão de uma avalição, ou alteração e exclusão de uma avaliação do usuário já existe na receita escolhida.
+1) 	O Usuário entra na página de uma receita que pertence a outro Usuário.
+2) 	O Sistema apresenta as operações que podem ser realizadas: inclusão de uma avalição, ou alteração e exclusão de uma avaliação do Usuário já existe na receita escolhida.
 3) 	O Usuário seleciona a operação desejada: Inclusão , Alteração ou Exclusão, ou opta por finalizar o caso de uso.
 4) 	Se o Usuário desejar continuar com a gestão de avaliações de receitas, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
 
@@ -251,6 +250,39 @@ Fluxo Alternativo (4): Consulta
 a) O Usuário seleciona uma receita, sua ou de outro usuário, e consegue visualizar o valor da média das avaliações para a receita escolhida
 
 Pós-condições: Uma avaliação foi inserida ou removida, seu valor foi alterado ou apresentado na tela (em conjunto com os valores de outras avaliações da mesma receita).
+
+---
+
+#### Gerenciar receitas favoritadas (CSU04)
+
+Sumário: O Usuário realiza a gestão (inclusão, remoção, alteração e consulta) de receitas favoritadas.
+
+Ator Primário: Usuário.
+
+Pré-condições: O Usuário deve estar cadastrado e logado no sistema.
+
+Fluxo Principal:
+
+1) 	O Usuário entra na página de uma receita que pertence a outro usuário.
+2) 	O Sistema apresenta as operações que podem ser realizadas: inclusão da receita na lista de receitas favoritadas do usuário ou exclusão de uma receita da lista.
+3) 	O Usuário seleciona a operação desejada: Inclusão ou Exclusão, ou opta por finalizar o caso de uso.
+4) 	Se o Usuário desejar continuar com a gestão de receitas favoritadas, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+
+Fluxo Alternativo (1): Inclusão
+
+a)	O Usuário clica no botão de favoritar uma receita selecionada. <br>
+b)	O Sistema realiza a inclusão da receita na lista de receitas favoritas do usuário; caso contrário, o Sistema reporta o fato. <br>
+
+Fluxo Alternativo (2): Remoção
+
+a) O Usuário seleciona uma receita da sua lista de receitas favoritas e requisita ao Sistema que a remova.  
+b) Se a receitas favoritada pode ser removida, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato.
+
+Fluxo Alternativo (3): Consulta
+
+a) O Usuário entra na sua página de receitas favoritadas e consegue visualizar a sua lista de receitas favoritas com os dados de cada receita.
+
+Pós-condições: Uma receita foi inserida ou removida da lista de receitas favoritas do usuário, a lista foi apresentada na tela.
 
 ---
 
