@@ -213,6 +213,47 @@ b)	O Sistema verifica a validade dos dados e, se eles forem válidos, altera os 
 
 Pós-condições: Um usuário foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
 
+---
+
+
+#### Gerenciar avaliações de receitas (CSU03)
+
+Sumário: O Usuário realiza a gestão (inclusão, remoção, alteração e consulta) das avaliações de receitas.
+
+Ator Primário: Usuário.
+
+Pré-condições: O Usuário deve estar cadastrado e logado no sistema.
+
+Fluxo Principal:
+
+1) 	O Usuário entra na página de uma receita que pertence a outro usuário.
+2) 	O Sistema apresenta as operações que podem ser realizadas: inclusão de uma avalição, ou alteração e exclusão de uma avaliação do usuário já existe na receita escolhida.
+3) 	O Usuário seleciona a operação desejada: Inclusão , Alteração ou Exclusão, ou opta por finalizar o caso de uso.
+4) 	Se o Usuário desejar continuar com a gestão de avaliações de receitas, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+
+Fluxo Alternativo (1): Inclusão
+
+a)	O Usuário clica em um valor de 1 a 5 para a avaliação da receita selecionada. <br>
+b)	O Sistema realiza a inclusão da avaliação; caso contrário, o Sistema reporta o fato. <br>
+
+Fluxo Alternativo (2): Alteração
+
+a)	O Usuário altera o valor de uma avaliação já existente. <br>
+b)	O Sistema altera o valor dessa avaliação para dada receita, caso contrário, o erro é reportado. <br>
+
+Fluxo Alternativo (3): Remoção
+
+a) O Usuário seleciona uma avaliação e requisita ao Sistema que a remova.  
+b) Se a avaliação pode ser removida, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato.
+
+Fluxo Alternativo (4): Consulta
+
+a) O Usuário seleciona uma receita, sua ou de outro usuário, e consegue visualizar o valor da média das avaliações para a receita escolhida
+
+Pós-condições: Uma avaliação foi inserida ou removida, seu valor foi alterado ou apresentado na tela (em conjunto com os valores de outras avaliações da mesma receita).
+
+---
+
 ### 3.4.3 Diagrama de Classes 
 
 A Figura 2 mostra o diagrama de classes do sistema. Uma receita deve conter pelo menos um ingrediente e pode pertencer a várias categorias. Ela também pode possuir comentários e avaliações. O usuário pode abrir solicitações para adicionar novos ingredientes e categorias ao sistema, que podem ser aprovados ou rejeitados pelo administrador. O usuário também pode conter preferências.
