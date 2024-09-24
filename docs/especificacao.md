@@ -292,8 +292,7 @@ A Figura 2 mostra o diagrama de classes do sistema. Uma receita deve conter pelo
 
 #### Figura 2: Diagrama de Classes do Sistema.
  
-![image](https://github.com/user-attachments/assets/024d6a48-f922-4269-8f0b-21a06a9eea83)
-
+![image](https://github.com/user-attachments/assets/e3fd8170-ab5a-45b4-a239-8e3279b34505)
 
 ### 3.4.4 Descrições das Classes 
 
