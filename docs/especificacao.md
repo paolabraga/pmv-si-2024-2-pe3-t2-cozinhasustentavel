@@ -302,27 +302,29 @@ Fluxo Principal:
 
 Fluxo Alternativo (1): Inclusão
 
-a) O Admin requisita a inclusão de um ingrediente.
-b) O Sistema apresenta uma janela solicitando o nome do ingrediente.
-c) O Admin fornece as informações solicitadas.
+a) O Admin requisita a inclusão de um ingrediente. <br>
+b) O Sistema apresenta uma janela solicitando o nome do ingrediente. <br>
+c) O Admin fornece as informações solicitadas. <br>
 d) O Sistema verifica se o nome do ingrediente possui algum caractere inválido, se sim ele mostra um erro ao Admin para que os campos sejam corrigidos. Senão ele realiza a inclusão do ingrediente na lista de ingredientes.
 
 Fluxo Alternativo (2): Alteração
 
-a) O Admin altera o nome do ingrediente e requisita sua atualização.
+a) O Admin altera o nome do ingrediente e requisita sua atualização. <br>
 b) O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados na lista de ingredientes, caso contrário, o erro é reportado.
 
 Fluxo Alternativo (3): Remoção
 
-a) O Admin seleciona um ingrediente e requisita ao Sistema que o remova.
+a) O Admin seleciona um ingrediente e requisita ao Sistema que o remova. <br>
 b) Se o ingrediente pode ser removido, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato.
 
 Fluxo Alternativo (4): Consulta
 
-a) O Usuário deseja adicionar um ingrediente em sua receita.
+a) O Usuário deseja adicionar um ingrediente em sua receita. <br>
 b) O Sistema apresenta uma lista de ingredientes.
 
 Pós-condições: Um ingrediente foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
+
+---
 
 #### Gerenciar comentários de cada receita (CSU06)
 
@@ -341,17 +343,17 @@ Fluxo Principal:
 
 Fluxo Alternativo (1): Inclusão
 
-a) O Usuário digita o comentário que quer fazer na receita selecionada.
+a) O Usuário digita o comentário que quer fazer na receita selecionada. <br>
 b) O Sistema realiza a inclusão do comentário; caso contrário, o erro é reportado.
 
 Fluxo Alternativo (2): Alteração
 
-a) O Usuário altera o texto de um comentário já existente.
+a) O Usuário altera o texto de um comentário já existente. <br>
 b) O Sistema altera o texto desse comentário para dada receita, caso contrário, o erro é reportado.
 
 Fluxo Alternativo (3): Remoção
 
-a) O Usuário seleciona um comentário e requisita ao Sistema que o remova.
+a) O Usuário seleciona um comentário e requisita ao Sistema que o remova. <br>
 b) Se o comentário pode ser removido, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato.
 
 Fluxo Alternativo (4): Consulta
@@ -359,6 +361,8 @@ Fluxo Alternativo (4): Consulta
 a) O Usuário seleciona uma receita, sua ou de outro usuário, e consegue visualizar os comentários postados nesta receita.
 
 Pós-condições: Um Comentário foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
+
+---
 
 #### Gerenciar categorias de receitas (CSU07)
 
@@ -377,27 +381,29 @@ Fluxo Principal:
 
 Fluxo Alternativo (1): Inclusão
 
-a) O Admin requisita a inclusão de uma categoria de receitas.
-b) O Sistema apresenta uma janela solicitando o nome da categoria.
-c) O Admin fornece as informações solicitadas.
+a) O Admin requisita a inclusão de uma categoria de receitas. <br>
+b) O Sistema apresenta uma janela solicitando o nome da categoria. <br>
+c) O Admin fornece as informações solicitadas. <br>
 d) O Sistema verifica se o nome da categoria possui algum caractere inválido, se sim ele mostra um erro ao Admin para que os campos sejam corrigidos. Senão ele realiza a inclusão da categoria na lista de categorias de receitas.
 
 Fluxo Alternativo (2): Alteração
 
-a) O Admin altera o nome da categoria e requisita sua atualização.
+a) O Admin altera o nome da categoria e requisita sua atualização. <br>
 b) O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados na lista de categorias de receitas, caso contrário, o erro é reportado.
 
 Fluxo Alternativo (3): Remoção
 
-a) O Admin seleciona uma das categorias de receitas e requisita ao Sistema que a remova.
+a) O Admin seleciona uma das categorias de receitas e requisita ao Sistema que a remova. <br>
 b) Se a categoria pode ser removida, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato.
 
 Fluxo Alternativo (4): Consulta
 
-a) O Usuário opta por pesquisar uma receita por categorias.
+a) O Usuário opta por pesquisar uma receita por categorias. <br>
 b) O Sistema apresenta uma lista de categorias com categorias de receitas e ingredientes.
 
 Pós-condições: Uma Categoria foi inserida ou removida, seus dados foram alterados ou apresentados na tela.
+
+---
 
 #### Gerenciar categorias de ingredientes (CSU08)
 
@@ -416,24 +422,24 @@ Fluxo Principal:
 
 Fluxo Alternativo (1): Inclusão
 
-a) O Admin requisita a inclusão de uma categoria de ingredientes.
-b) O Sistema apresenta uma janela solicitando o nome da categoria.
-c) O Admin fornece as informações solicitadas.
+a) O Admin requisita a inclusão de uma categoria de ingredientes. <br>
+b) O Sistema apresenta uma janela solicitando o nome da categoria. <br>
+c) O Admin fornece as informações solicitadas. <br>
 d) O Sistema verifica se o nome da categoria possui algum caractere inválido, se sim ele mostra um erro ao Admin para que os campos sejam corrigidos. Senão ele realiza a inclusão da categoria na lista de categorias de ingredientes.
 
 Fluxo Alternativo (2): Alteração
 
-a) O Admin altera o nome da categoria e requisita sua atualização.
+a) O Admin altera o nome da categoria e requisita sua atualização. <br>
 b) O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados na lista de categorias de ingredientes, caso contrário, o erro é reportado.
 
 Fluxo Alternativo (3): Remoção
 
-a) O Admin seleciona uma das categorias de ingredientes e requisita ao Sistema que a remova.
+a) O Admin seleciona uma das categorias de ingredientes e requisita ao Sistema que a remova. <br>
 b) Se a categoria pode ser removida, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato.
 
 Fluxo Alternativo (4): Consulta
 
-a) O Usuário opta por pesquisar uma receita por categorias.
+a) O Usuário opta por pesquisar uma receita por categorias. <br>
 b) O Sistema apresenta uma lista de categorias com categorias de receitas e ingredientes.
 
 Pós-condições: Uma Categoria foi inserida ou removida, seus dados foram alterados ou apresentados na tela.
