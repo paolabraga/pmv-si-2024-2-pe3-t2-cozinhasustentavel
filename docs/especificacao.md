@@ -285,6 +285,159 @@ a) O Usuário entra na sua página de receitas favoritadas e consegue visualizar
 
 Pós-condições: Uma receita foi inserida ou removida da lista de receitas favoritas do usuário, a lista foi apresentada na tela.
 
+#### Gerenciar alimentos/ingredientes (CSU05)
+
+Sumário: O Admin realiza a gestão (inclusão, remoção, alteração e consulta) de Ingredientes.
+
+Ator Primário: Admin.
+
+Pré-condições: O Admin deve estar cadastrado e logado no sistema.
+
+Fluxo Principal:
+
+1) O Admin entra na pagina de gerenciar ingredientes.
+2) O Sistema apresenta as operações que podem ser realizadas: adição de um ingrediente, exclusão ou alteração de um ingrediente já existente.
+3) O Admin seleciona a operação desejada: adição, exclusão ou alteração, ou opta por finalizar o caso de uso.
+4) Se o Admin desejar continuar com a gestão de ingredientes, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+
+Fluxo Alternativo (1): Inclusão
+
+a) O Admin requisita a inclusão de um ingrediente.
+b) O Sistema apresenta uma janela solicitando o nome do ingrediente.
+c) O Admin fornece as informações solicitadas.
+d) O Sistema verifica se o nome do ingrediente possui algum caractere inválido, se sim ele mostra um erro ao Admin para que os campos sejam corrigidos. Senão ele realiza a inclusão do ingrediente na lista de ingredientes.
+
+Fluxo Alternativo (2): Alteração
+
+a) O Admin altera o nome do ingrediente e requisita sua atualização.
+b) O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados na lista de ingredientes, caso contrário, o erro é reportado.
+
+Fluxo Alternativo (3): Remoção
+
+a) O Admin seleciona um ingrediente e requisita ao Sistema que o remova.
+b) Se o ingrediente pode ser removido, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato.
+
+Fluxo Alternativo (4): Consulta
+
+a) O Usuário deseja adicionar um ingrediente em sua receita.
+b) O Sistema apresenta uma lista de ingredientes.
+
+Pós-condições: Um ingrediente foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
+
+#### Gerenciar comentários de cada receita (CSU06)
+
+Sumário: O Usuário realiza a gestão (inclusão, remoção, alteração e consulta) de Comentários.
+
+Ator Primário: Usuário.
+
+Pré-condições: O Usuário deve estar cadastrado e logado no sistema.
+
+Fluxo Principal:
+
+1) O Usuário entra na página de uma receita que pertence a outro Usuário.
+2) O Sistema apresenta as operações que podem ser realizadas: adição de um comentário, exclusão ou alteração de um comentário já existente.
+3) O Usuário seleciona a operação desejada: adição, exclusão ou alteração, ou opta por finalizar o caso de uso.
+4) Se o Usuário desejar continuar com a gestão de comentários, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+
+Fluxo Alternativo (1): Inclusão
+
+a) O Usuário digita o comentário que quer fazer na receita selecionada.
+b) O Sistema realiza a inclusão do comentário; caso contrário, o erro é reportado.
+
+Fluxo Alternativo (2): Alteração
+
+a) O Usuário altera o texto de um comentário já existente.
+b) O Sistema altera o texto desse comentário para dada receita, caso contrário, o erro é reportado.
+
+Fluxo Alternativo (3): Remoção
+
+a) O Usuário seleciona um comentário e requisita ao Sistema que o remova.
+b) Se o comentário pode ser removido, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato.
+
+Fluxo Alternativo (4): Consulta
+
+a) O Usuário seleciona uma receita, sua ou de outro usuário, e consegue visualizar os comentários postados nesta receita.
+
+Pós-condições: Um Comentário foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
+
+#### Gerenciar categorias de receitas (CSU07)
+
+Sumário: O Admin realiza a gestão (inclusão, remoção, alteração e consulta) de Categorias de Receitas.
+
+Ator Primário: Admin.
+
+Pré-condições: O Admin deve estar cadastrado e logado no sistema.
+
+Fluxo Principal:
+
+1) O Admin entra na pagina de gerenciamento de categorias de receitas.
+2) O Sistema apresenta as operações que podem ser realizadas: adição de uma categoria, exclusão ou alteração de uma categoria já existente.
+3) O Usuário seleciona a operação desejada: adição, exclusão ou alteração, ou opta por finalizar o caso de uso.
+4) Se o Usuário desejar continuar com a gestão de comentários, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+
+Fluxo Alternativo (1): Inclusão
+
+a) O Admin requisita a inclusão de uma categoria de receitas.
+b) O Sistema apresenta uma janela solicitando o nome da categoria.
+c) O Admin fornece as informações solicitadas.
+d) O Sistema verifica se o nome da categoria possui algum caractere inválido, se sim ele mostra um erro ao Admin para que os campos sejam corrigidos. Senão ele realiza a inclusão da categoria na lista de categorias de receitas.
+
+Fluxo Alternativo (2): Alteração
+
+a) O Admin altera o nome da categoria e requisita sua atualização.
+b) O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados na lista de categorias de receitas, caso contrário, o erro é reportado.
+
+Fluxo Alternativo (3): Remoção
+
+a) O Admin seleciona uma das categorias de receitas e requisita ao Sistema que a remova.
+b) Se a categoria pode ser removida, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato.
+
+Fluxo Alternativo (4): Consulta
+
+a) O Usuário opta por pesquisar uma receita por categorias.
+b) O Sistema apresenta uma lista de categorias com categorias de receitas e ingredientes.
+
+Pós-condições: Uma Categoria foi inserida ou removida, seus dados foram alterados ou apresentados na tela.
+
+#### Gerenciar categorias de ingredientes (CSU08)
+
+Sumário: O Admin realiza a gestão (inclusão, remoção, alteração e consulta) de Categorias de Ingredientes.
+
+Ator Primário: Admin.
+
+Pré-condições: O Admin deve estar cadastrado e logado no sistema.
+
+Fluxo Principal:
+
+1) O Admin entra na pagina de gerenciamento de categorias de ingredientes.
+2) O Sistema apresenta as operações que podem ser realizadas: adição de uma categoria, exclusão ou alteração de uma categoria já existente.
+3) O Usuário seleciona a operação desejada: adição, exclusão ou alteração, ou opta por finalizar o caso de uso.
+4) Se o Usuário desejar continuar com a gestão de comentários, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+
+Fluxo Alternativo (1): Inclusão
+
+a) O Admin requisita a inclusão de uma categoria de ingredientes.
+b) O Sistema apresenta uma janela solicitando o nome da categoria.
+c) O Admin fornece as informações solicitadas.
+d) O Sistema verifica se o nome da categoria possui algum caractere inválido, se sim ele mostra um erro ao Admin para que os campos sejam corrigidos. Senão ele realiza a inclusão da categoria na lista de categorias de ingredientes.
+
+Fluxo Alternativo (2): Alteração
+
+a) O Admin altera o nome da categoria e requisita sua atualização.
+b) O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados na lista de categorias de ingredientes, caso contrário, o erro é reportado.
+
+Fluxo Alternativo (3): Remoção
+
+a) O Admin seleciona uma das categorias de ingredientes e requisita ao Sistema que a remova.
+b) Se a categoria pode ser removida, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato.
+
+Fluxo Alternativo (4): Consulta
+
+a) O Usuário opta por pesquisar uma receita por categorias.
+b) O Sistema apresenta uma lista de categorias com categorias de receitas e ingredientes.
+
+Pós-condições: Uma Categoria foi inserida ou removida, seus dados foram alterados ou apresentados na tela.
+
 ---
 
 ### 3.4.3 Diagrama de Classes 
