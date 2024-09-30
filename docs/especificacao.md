@@ -445,6 +445,32 @@ b) O Sistema apresenta uma lista de categorias com categorias de receitas e ingr
 Pós-condições: Uma Categoria foi inserida ou removida, seus dados foram alterados ou apresentados na tela.
 
 ---
+#### Gerenciar Preferências (CSU13)
+
+Sumário: O usuário realiza a gestão (inclusão, alteração, exclusão e consulta) com base em suas preferências e interesses alimentares.
+
+Ator Primário: Usuário.
+
+Pré-condições: As preferências do usuário serão atualizadas no sistema para influenciar as sugestões.
+
+Fluxo Principal: 
+
+1) O usuário acessa a área de configurações de preferências dentro da aplicação.
+2) O sistema exibe as preferências de sugestões e notificações configuradas previamente pelo usuário (se existirem), incluindo tipos de receita (ex: vegana, sem glúten), frequência de notificações, e horários preferenciais.
+3) O usuário seleciona a opção de adicionar uma nova preferência.
+4) O sistema solicita informações sobre a nova preferência, como tipos de receitas preferidas, restrições alimentares, e frequência de notificações.
+
+Fluxo Alternativo (1): Consulta Sem Preferências Configuradas
+a) Se o usuário não tiver preferências configuradas, o sistema exibe uma mensagem informando não haver preferências salvas e oferece a opção de adicionar uma nova.
+
+Fluxo Alternativo (2): Alteração/Exclusão
+a) O usuário decide cancelar uma alteração ou exclusão de preferência.
+b) O sistema reverte para o estado anterior sem salvar as mudanças.
+
+Fluxo Alternativo (3): Erro na Inclusão de Preferências
+a) Caso o sistema detecte um erro na inclusão de uma nova preferência (ex: dados inválidos ou incompletos), o usuário é notificado do erro e solicitado a corrigir os dados antes de tentar novamente.
+
+---
 
 ### 3.4.3 Diagrama de Classes 
 
