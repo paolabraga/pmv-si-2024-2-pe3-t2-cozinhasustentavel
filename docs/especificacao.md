@@ -40,8 +40,8 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 | RF7 |	Gerenciar categorias de receitas	| Processamento de Inclusão, Exclusão e Consulta de Categorias de Receitas (apenas para admin) |
 | RF8 |	Gerenciar categorias de ingredientes	| Processamento de Inclusão, Exclusão e Consulta de Categorias de Ingredientes (apenas para admin) |
 | RF9 |	Gerenciar sugestões de receitas	| Listar sugestões de receitas relacionadas com o que o usuário já pesquisou |
-| RF10 | Requisitar a adição de ingredientes	| Processamento de Inclusão de Solicitações para adicionar mais ingredientes no sistema |
-| RF11 | Gerenciar solicitação de adição de ingredientes	| Processamento de Consulta, Aprovação e Rejeição de Solicitações para adicionar mais ingredientes no sistema (apenas para admin) |
+| RF10 | Requisitar a adição de ingredientes/categorias	| Processamento de Inclusão de Solicitações para adicionar mais ingredientes ou categorias no sistema |
+| RF11 | Gerenciar solicitação de adição de ingredientes/categorias	| Processamento de Consulta, Aprovação e Rejeição de Solicitações para adicionar mais ingredientes ou categorias no sistema (apenas para admin) |
 | RF12 | Enviar notificações de novas receitas | Envio de notificação para usuários quando novas receitas de gostos similares forem adicionadas |
 | RF13 | Gerenciar preferências | Processamento de Inclusão, Alteração, Exclusão e Consulta de Preferências para sugestões e notificações de receitas |
 | RF14 | Gerenciar usuários seguidos | Processamento de Inclusão, Exclusão e Consulta de usuários seguidos por outro usuário |
