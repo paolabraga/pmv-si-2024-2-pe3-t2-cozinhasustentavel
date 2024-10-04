@@ -39,9 +39,9 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 | RF6 | Gerenciar comentários de cada receita	| Processamento de Inclusão, Exclusão e Consulta de Comentários |
 | RF7 |	Gerenciar categorias de receitas	| Processamento de Inclusão, Exclusão e Consulta de Categorias de Receitas (apenas para admin) |
 | RF8 |	Gerenciar categorias de ingredientes	| Processamento de Inclusão, Exclusão e Consulta de Categorias de Ingredientes (apenas para admin) |
-| RF9 |	Gerenciar sugestões	| Listar sugestões de receitas relacionadas com o que o usuário já pesquisou |
-| RF10 | Requisitar a adição de ingredientes	| Processamento de Inclusão de Solicitações para adicionar mais ingredientes no sistema |
-| RF11 | Gerenciar solicitação de adição de ingredientes	| Processamento de Consulta, Aprovação e Rejeição de Solicitações para adicionar mais ingredientes no sistema (apenas para admin) |
+| RF9 |	Gerenciar sugestões de receitas	| Listar sugestões de receitas relacionadas com o que o usuário já pesquisou |
+| RF10 | Requisitar a adição de ingredientes/categorias	| Processamento de Inclusão de Solicitações para adicionar mais ingredientes ou categorias no sistema |
+| RF11 | Gerenciar solicitação de adição de ingredientes/categorias	| Processamento de Consulta, Aprovação e Rejeição de Solicitações para adicionar mais ingredientes ou categorias no sistema (apenas para admin) |
 | RF12 | Enviar notificações de novas receitas | Envio de notificação para usuários quando novas receitas de gostos similares forem adicionadas |
 | RF13 | Gerenciar preferências | Processamento de Inclusão, Alteração, Exclusão e Consulta de Preferências para sugestões e notificações de receitas |
 | RF14 | Gerenciar usuários seguidos | Processamento de Inclusão, Exclusão e Consulta de usuários seguidos por outro usuário |
@@ -72,7 +72,7 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 ## 3.4 Modelagem do Sistema
 
 ### 3.4.1 Diagrama de Casos de Uso
-Como observado no diagrama de casos de uso da Figura 1, a secretária poderá gerenciar as matrículas e professores no sistema, enquanto o coordenador, além dessas funções, poderá gerenciar os cursos de aperfeiçoamento.
+Como observado no diagrama de casos de uso da Figura 1, a usuário pode gerenciar suas receitas, seu perfil, suas avaliações e comentários em receitas de outros usuários, suas receitas favoritadas, suas preferências, seus usuários seguidos, seus cardápios e sua lista de casa/compra. Ele também pode requisitar a adição de novos ingredientes e categorias ao usuário administrador, visualizar seus usuários seguidores e tornar seu perfil parceiro. O usuário administrador é responsável por gerenciar a lista de ingredientes, as categorias de ingredientes e categorias de receitas e as solicitações de adição de novos ingredientes e categorias ao sistema.
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
@@ -285,6 +285,8 @@ a) O Usuário entra na sua página de receitas favoritadas e consegue visualizar
 
 Pós-condições: Uma receita foi inserida ou removida da lista de receitas favoritas do usuário, a lista foi apresentada na tela.
 
+---
+
 #### Gerenciar alimentos/ingredientes (CSU05)
 
 Sumário: O Admin realiza a gestão (inclusão, remoção, alteração e consulta) de Ingredientes.
@@ -443,6 +445,93 @@ a) O Usuário opta por pesquisar uma receita por categorias. <br>
 b) O Sistema apresenta uma lista de categorias com categorias de receitas e ingredientes.
 
 Pós-condições: Uma Categoria foi inserida ou removida, seus dados foram alterados ou apresentados na tela.
+
+---
+#### Gerenciar Preferências (CSU13)
+
+Sumário: O usuário realiza a gestão (inclusão, alteração, exclusão e consulta) com base em suas preferências e interesses alimentares.
+
+Ator Primário: Usuário.
+
+Pré-condições: As preferências do usuário serão atualizadas no sistema para influenciar as sugestões de receitas.
+
+Fluxo Principal: 
+
+1) O usuário acessa a área de configurações de preferências dentro da aplicação.
+2) O sistema exibe as preferências de sugestões e notificações configuradas previamente pelo usuário (se existirem), incluindo tipos de receita (ex: vegana, sem glúten), frequência de notificações, e horários preferenciais.
+3) O usuário seleciona a opção de adicionar uma nova preferência.
+4) O sistema solicita informações sobre a nova preferência, como tipos de receitas preferidas, restrições alimentares, e frequência de notificações.
+
+Fluxo Alternativo (1): Consulta Sem Preferências Configuradas
+a) Se o usuário não tiver preferências configuradas, o sistema exibe uma mensagem informando não haver preferências salvas e oferece a opção de adicionar uma nova.
+
+Fluxo Alternativo (2): Alteração/Exclusão
+a) O usuário decide cancelar uma alteração ou exclusão de preferência.
+b) O sistema reverte para o estado anterior sem salvar as mudanças.
+
+Fluxo Alternativo (3): Erro na Inclusão de Preferências
+a) Caso o sistema detecte um erro na inclusão de uma nova preferência (ex: dados inválidos ou incompletos), o usuário é notificado do erro e solicitado a corrigir os dados antes de tentar novamente.
+
+---
+### Gerar relatório de vendas (CSU16)
+
+Sumário: Este caso de uso permite ao Administrador gerar relatórios de vendas com base em períodos de tempo específicos, como diário, semanal, mensal ou personalizado.
+
+Ator Primário: Administrador
+
+Pré-condições: O Administrador deve estar autenticado no sistema.
+
+Fluxo Principal:
+
+1) O Administrador acessa a opção "Relatórios de Vendas".
+2) O Administrador seleciona o período desejado para o relatório.
+3) O sistema gera o relatório com as informações de vendas no período especificado.
+4) O Administrador visualiza o relatório e pode optar por exportá-lo em formato PDF ou CSV.
+
+Pós-condições: O relatório de vendas é gerado com sucesso e pode ser visualizado ou exportado para formatos como PDF ou CSV.
+
+---
+
+### Gerenciar categorias de produtos (CSU17)
+
+Sumário: Este caso de uso permite ao Administrador gerenciar as categorias de produtos, realizando operações como inclusão, alteração, exclusão e consulta de categorias.
+
+Ator Primário: Administrador
+
+Pré-condições: O Administrador deve estar autenticado no sistema.
+
+Fluxo Principal:
+
+1) O Administrador acessa a opção "Gerenciar Categorias".
+2) O Administrador pode:
+ * Incluir uma nova categoria, fornecendo o nome e a descrição.
+ * Alterar uma categoria existente.
+ * Excluir uma categoria (desde que não esteja associada a produtos ativos).
+ * Consultar as categorias cadastradas no sistema.
+3) O sistema confirma as alterações e atualiza as categorias conforme solicitado.
+
+Pós-condições: As categorias são gerenciadas com sucesso, e o sistema reflete as alterações imediatamente nos produtos relacionados.
+
+---
+
+### Gerenciar estoque de produtos (CSU18)
+
+Sumário: Este caso de uso permite ao Administrador gerenciar o estoque de produtos, realizando operações como inclusão de novas unidades, remoção de unidades e consulta de níveis de estoque.
+
+Ator Primário: Administrador
+
+Pré-condições: O Administrador deve estar autenticado no sistema.
+
+Fluxo Principal:
+
+1) O Administrador acessa a opção "Gerenciar Estoque".
+2) O Administrador pode:
+ * Adicionar unidades ao estoque de um produto.
+ * Remover unidades do estoque de um produto.
+ * Consultar o nível de estoque atual de um produto.
+3) O sistema atualiza as informações de estoque conforme as operações realizadas.
+
+Pós-condições: O estoque é atualizado com sucesso e reflete a quantidade correta de produtos disponíveis para venda.
 
 ---
 
