@@ -473,6 +473,67 @@ Fluxo Alternativo (3): Erro na Inclusão de Preferências
 a) Caso o sistema detecte um erro na inclusão de uma nova preferência (ex: dados inválidos ou incompletos), o usuário é notificado do erro e solicitado a corrigir os dados antes de tentar novamente.
 
 ---
+### Gerar relatório de vendas (CSU16)
+
+Sumário: Este caso de uso permite ao Administrador gerar relatórios de vendas com base em períodos de tempo específicos, como diário, semanal, mensal ou personalizado.
+
+Ator Primário: Administrador
+
+Pré-condições: O Administrador deve estar autenticado no sistema.
+
+Fluxo Principal:
+
+1) O Administrador acessa a opção "Relatórios de Vendas".
+2) O Administrador seleciona o período desejado para o relatório.
+3) O sistema gera o relatório com as informações de vendas no período especificado.
+4) O Administrador visualiza o relatório e pode optar por exportá-lo em formato PDF ou CSV.
+
+Pós-condições: O relatório de vendas é gerado com sucesso e pode ser visualizado ou exportado para formatos como PDF ou CSV.
+
+---
+
+### Gerenciar categorias de produtos (CSU17)
+
+Sumário: Este caso de uso permite ao Administrador gerenciar as categorias de produtos, realizando operações como inclusão, alteração, exclusão e consulta de categorias.
+
+Ator Primário: Administrador
+
+Pré-condições: O Administrador deve estar autenticado no sistema.
+
+Fluxo Principal:
+
+1) O Administrador acessa a opção "Gerenciar Categorias".
+2) O Administrador pode:
+ * Incluir uma nova categoria, fornecendo o nome e a descrição.
+ * Alterar uma categoria existente.
+ * Excluir uma categoria (desde que não esteja associada a produtos ativos).
+ * Consultar as categorias cadastradas no sistema.
+3) O sistema confirma as alterações e atualiza as categorias conforme solicitado.
+
+Pós-condições: As categorias são gerenciadas com sucesso, e o sistema reflete as alterações imediatamente nos produtos relacionados.
+
+---
+
+### Gerenciar estoque de produtos (CSU18)
+
+Sumário: Este caso de uso permite ao Administrador gerenciar o estoque de produtos, realizando operações como inclusão de novas unidades, remoção de unidades e consulta de níveis de estoque.
+
+Ator Primário: Administrador
+
+Pré-condições: O Administrador deve estar autenticado no sistema.
+
+Fluxo Principal:
+
+1) O Administrador acessa a opção "Gerenciar Estoque".
+2) O Administrador pode:
+ * Adicionar unidades ao estoque de um produto.
+ * Remover unidades do estoque de um produto.
+ * Consultar o nível de estoque atual de um produto.
+3) O sistema atualiza as informações de estoque conforme as operações realizadas.
+
+Pós-condições: O estoque é atualizado com sucesso e reflete a quantidade correta de produtos disponíveis para venda.
+
+---
 
 ### 3.4.3 Diagrama de Classes 
 
