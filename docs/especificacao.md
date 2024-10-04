@@ -285,6 +285,8 @@ a) O Usuário entra na sua página de receitas favoritadas e consegue visualizar
 
 Pós-condições: Uma receita foi inserida ou removida da lista de receitas favoritas do usuário, a lista foi apresentada na tela.
 
+---
+
 #### Gerenciar alimentos/ingredientes (CSU05)
 
 Sumário: O Admin realiza a gestão (inclusão, remoção, alteração e consulta) de Ingredientes.
