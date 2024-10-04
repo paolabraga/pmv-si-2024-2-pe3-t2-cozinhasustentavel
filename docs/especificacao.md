@@ -72,7 +72,7 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 ## 3.4 Modelagem do Sistema
 
 ### 3.4.1 Diagrama de Casos de Uso
-Como observado no diagrama de casos de uso da Figura 1, a secretária poderá gerenciar as matrículas e professores no sistema, enquanto o coordenador, além dessas funções, poderá gerenciar os cursos de aperfeiçoamento.
+Como observado no diagrama de casos de uso da Figura 1, a usuário pode gerenciar suas receitas, seu perfil, suas avaliações e comentários em receitas de outros usuários, suas receitas favoritadas, suas preferências, seus usuários seguidos, seus cardápios e sua lista de casa/compra. Ele também pode requisitar a adição de novos ingredientes e categorias ao usuário administrador, visualizar seus usuários seguidores e tornar seu perfil parceiro. O usuário administrador é responsável por gerenciar a lista de ingredientes, as categorias de ingredientes e categorias de receitas e as solicitações de adição de novos ingredientes e categorias ao sistema.
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
