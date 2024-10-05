@@ -76,7 +76,8 @@ Como observado no diagrama de casos de uso da Figura 1, a usuário pode gerencia
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bdiv%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3B9%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3BGerenciar%20Sugest%C3%B5es%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22ellipse%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22140%22%20y%3D%22477%22%20width%3D%22136.25%22%20height%3D%2280%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E
+![cozinha sustentável](https://github.com/user-attachments/assets/2e5ee350-1831-4bbd-abae-460e2265b871)
+
 
 
 
