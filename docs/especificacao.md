@@ -76,7 +76,7 @@ Como observado no diagrama de casos de uso da Figura 1, a usuário pode gerencia
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-![image](https://github.com/user-attachments/assets/aec67690-903c-4365-b6f1-0570fd0f1417)
+%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bdiv%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3B9%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3BGerenciar%20Sugest%C3%B5es%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22ellipse%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22140%22%20y%3D%22477%22%20width%3D%22136.25%22%20height%3D%2280%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E
 
 
 
@@ -450,37 +450,18 @@ Pós-condições: Uma Categoria foi inserida ou removida, seus dados foram alter
 
 #### Gerenciar sugestões de receitas (CSU09)
 
-Sumário: O Usuário realiza a gestão (inclusão, remoção, alteração e consulta) das receitas para as quais gostaria de receber sugestões.
+Sumário: O Sistema realiza a gestão (inclusão, remoção, alteração e consulta) das sugestões de receitas para o Usuário.
 
-Ator Primário: Usuário.
+Ator Primário: Sistema.
 
-Pré-condições: O Usuário deve estar cadastrado e logado no sistema.
+Pré-condições: O Usuário deve ter dados o suficiente para o Sistema saber o que sugerir.
 
 Fluxo Principal:
 
-1) O Usuário entra na pagina de gerenciamento de sugestões de receitas.
-2) O Sistema apresenta as operações que podem ser realizadas: adição de uma preferência, exclusão ou alteração de uma preferência já existente.
-3) O Usuário seleciona a operação desejada: adição, exclusão ou alteração, ou opta por finalizar o caso de uso.
-4) Se o Usuário desejar continuar com a gestão de sugestões, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
-
-Fluxo Alternativo (1): Inclusão
-
-a) O Usuário requisita a inclusão de uma preferência. <br>
-b) O Sistema apresenta uma janela solicitando as categorias de receitas e ingredientes que o Usuário deseja ser recomendado. <br>
-c) O Usuário fornece as informações solicitadas. <br>
-d) O Sistema verifica se as categorias não foram selecionadas, se sim ele mostra um erro ao Usuário para que os campos sejam corrigidos. Senão ele realiza a inclusão da preferencia.
-
-Fluxo Alternativo (2): Alteração
-
-a) O Usuário altera o nome da categoria e requisita sua atualização. <br>
-b) O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados na lista de categorias de ingredientes, caso contrário, o erro é reportado.
-
-Fluxo Alternativo (3): Remoção
-
-a) O Usuário seleciona uma das preferências e requisita ao Sistema que a remova. <br>
-b) Se a preferência pode ser removida, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato.
-
-Pós-condições: Uma Preferência foi inserida ou removida, seus dados foram alterados ou apresentados na tela.
+1) O Sistema busca as preferencias do Usuário e as receitas que ele curtiu.
+2) O Sistema, baseado na consulta do passo anterior, definira quais novas receitas mais combinam com o Usuário
+3) O Usuário entra na pagina de sugestão de receitas podendo realizar a seguintes operações: acessar a receita ou sair do caso de uso.
+4) Se o Usuário desejar continuar com a visualização das receitas sugeridas, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
 
 ---
 
