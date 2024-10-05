@@ -447,6 +447,124 @@ b) O Sistema apresenta uma lista de categorias com categorias de receitas e ingr
 Pós-condições: Uma Categoria foi inserida ou removida, seus dados foram alterados ou apresentados na tela.
 
 ---
+
+#### Gerenciar sugestões de receitas (CSU09)
+
+Sumário: O Usuário realiza a gestão (inclusão, remoção, alteração e consulta) das receitas para as quais gostaria de receber sugestões.
+
+Ator Primário: Usuário.
+
+Pré-condições: O Usuário deve estar cadastrado e logado no sistema.
+
+Fluxo Principal:
+
+1) O Usuário entra na pagina de gerenciamento de sugestões de receitas.
+2) O Sistema apresenta as operações que podem ser realizadas: adição de uma preferência, exclusão ou alteração de uma preferência já existente.
+3) O Usuário seleciona a operação desejada: adição, exclusão ou alteração, ou opta por finalizar o caso de uso.
+4) Se o Usuário desejar continuar com a gestão de sugestões, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+
+Fluxo Alternativo (1): Inclusão
+
+a) O Usuário requisita a inclusão de uma preferência. <br>
+b) O Sistema apresenta uma janela solicitando as categorias de receitas e ingredientes que o Usuário deseja ser recomendado. <br>
+c) O Usuário fornece as informações solicitadas. <br>
+d) O Sistema verifica se as categorias não foram selecionadas, se sim ele mostra um erro ao Usuário para que os campos sejam corrigidos. Senão ele realiza a inclusão da preferencia.
+
+Fluxo Alternativo (2): Alteração
+
+a) O Usuário altera o nome da categoria e requisita sua atualização. <br>
+b) O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados na lista de categorias de ingredientes, caso contrário, o erro é reportado.
+
+Fluxo Alternativo (3): Remoção
+
+a) O Usuário seleciona uma das preferências e requisita ao Sistema que a remova. <br>
+b) Se a preferência pode ser removida, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato.
+
+Pós-condições: Uma Preferência foi inserida ou removida, seus dados foram alterados ou apresentados na tela.
+
+---
+
+#### Requisitar a adição de ingredientes/categorias (CSU10)
+
+Sumário: O Usuário realiza a inclusão de uma sugestão de ingrediente ou categoria.
+
+Ator Primário: Usuário.
+
+Pré-condições: O Usuário deve estar cadastrado e logado no sistema.
+
+Fluxo Principal:
+
+1) O Usuário entra na pagina de solicitar nova categoria ou ingrediente.
+2) O Sistema apresenta as operações que podem ser realizadas: adição de um ingrediente ou adição de uma categoria.
+3) O Usuário seleciona a operação desejada: adição de um ingrediente ou adição de uma categoria, ou opta por finalizar o caso de uso.
+4) Se o Usuário desejar continuar com a solicitação, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+
+Fluxo Alternativo (1): Inclusão de um ingrediente
+
+a) O Usuário requisita a inclusão de um ingrediente. <br>
+b) O Sistema apresenta uma janela solicitando o nome do ingrediente ao Usuário. <br>
+c) O Usuário fornece as informações solicitadas. <br>
+d) O Sistema verifica se o ingrediente ja existe, se sim ele mostra um erro ao Usuário para que os campos sejam corrigidos. Senão ele realiza a inclusão da sugestão do ingrediente.
+
+Fluxo Alternativo (3): Inclusão de um categoria
+
+a) O Usuário requisita a inclusão de uma categoria. <br>
+b) O Sistema apresenta uma janela solicitando o nome da cadegoria ao Usuário. <br>
+c) O Usuário fornece as informações solicitadas. <br>
+d) O Sistema verifica se a categoria ja existe, se sim ele mostra um erro ao Usuário para que os campos sejam corrigidos. Senão ele realiza a inclusão da sugestão da categoria.
+
+Pós-condições: Uma sugestão foi inserida, seus dados apresentados na tela.
+
+---
+
+#### Gerenciar solicitação de adição de ingredientes/categorias (CSU11)
+
+Sumário: O Admin realiza a aprovação ou não de uma sugestão de ingrediente ou categoria.
+
+Ator Primário: Admin.
+
+Pré-condições: O Admin deve estar cadastrado e logado no sistema.
+
+Fluxo Principal:
+
+1) O Admin entra na pagina de gerenciar solicitações de nova categoria ou ingrediente.
+2) O Sistema apresenta as operações que podem ser realizadas: aprovar ou reprovar uma solicitação.
+3) O Admin seleciona a operação desejada: aprovar ou reprovar uma solicitação, ou opta por finalizar o caso de uso.
+4) Se o Admin desejar continuar com a solicitação, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+
+Fluxo Alternativo (1): aprovação
+
+a) O Admin requisita a aprovação da sugestão. <br>
+b) O Sistema apresenta uma janela com o campo de nome ja preenchida com a sugestão do Usuário. <br>
+c) Se o Admin desejar alterar algo antes de adicionar, ele altera o campo de nome e clica em inserir. Se não o Admin apenas clica em inserir. <br>
+d) O Sistema verifica se o ingrediente ou a categoria ja existe, se sim ele mostra um erro ao Admin para que os campos sejam corrigidos. Senão ele realiza a inclusão do ingrediente ou categoria.
+
+Fluxo Alternativo (3): Inclusão de um categoria
+
+a) O Admin requisita a reprovação da sugestão. <br>
+b) O sistema exibe uma janela confirmando se o Admin realmente deseja reprovar a sugestão, oferecendo as opções de sim ou não. <br>
+c) Se o Admin selecionar a opção não, o caso de uso retona para o passo 2; caso contrario a sugestão é excluida da lista de sugestões. <br>
+
+Pós-condições: Uma sugestão foi aprovada ou reprovada, incluido ou não um novo ingrediente ou categoria.
+
+---
+
+#### Enviar notificações de novas receitas (CSU12)
+
+Sumário: O Sistema realiza o envio de notificações de sugestões de receitas ao Usuário.
+
+Ator Primário: Sistema.
+
+Pré-condições: O Usuário deve ter permitido o envio de notificações.
+
+Fluxo Principal:
+
+1) O Sistema verifica quais as preferencias do Usuário consultado quais as sugestões ele quer receber.
+2) O Sistema envia uma notificação a cada 10 receitas para o Usuário.
+3) O Usuário ao receber a notificação realiza a operação desejada: clicar na notificação ou opta por finalizar o caso de uso.
+4) Se o Usuário desejar clicar na notificação, a pagina de receitas para você é aberta com a lista de sugestões; caso contrário o caso de uso termina.
+
+---
 #### Gerenciar Preferências (CSU13)
 
 Sumário: O usuário realiza a gestão (inclusão, alteração, exclusão e consulta) com base em suas preferências e interesses alimentares.
