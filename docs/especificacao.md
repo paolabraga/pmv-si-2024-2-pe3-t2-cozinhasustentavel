@@ -1,29 +1,27 @@
 # 3. DOCUMENTO DE ESPECIFICAÇÃO DE REQUISITOS DE SOFTWARE
 
-Nesta parte do trabalho você deve detalhar a documentação dos requisitos do sistema proposto de acordo com as seções a seguir. Ressalta-se que aqui é utilizado como exemplo um sistema de gestão de cursos de aperfeiçoamento.
-
 ## 3.1 Objetivos deste documento
-Descrever e especificar as necessidades da Coordenação do Curso de Sistemas de Informação da PUC Minas que devem ser atendidas pelo projeto SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento.
+Descrever e especificar as necessidades dos usuários que buscam receitas e soluções para promover uma cozinha sustentável, que devem ser atendidas pelo projeto SCRCS – Sistema de Cadastro de Receitas, Cozinha Sustentável.
 
 ## 3.2 Escopo do produto
 
 ### 3.2.1 Nome do produto e seus componentes principais
-O produto será denominado SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento. Ele terá somente um componente (módulo) com os devidos elementos necessários à gestão de cursos.
+O produto será denominado SCRCS – Sistema de Cadastro de Receitas, Cozinha Sustentável. Ele terá um componente principal que incluirá funcionalidades para cadastro e gerenciamento de receitas, usuários, avaliações e ingredientes.
 
 ### 3.2.2 Missão do produto
-Gerenciar informações sobre a oferta de cursos de aperfeiçoamento, gerenciar a composição das turmas, alunos, professores e matrículas. 
+Desenvolver um sistema web que permita aos usuários encontrar, compartilhar e avaliar receitas, com o objetivo de desmistificar, simplificar e otimizar o uso diversificado dos principais ingredientes usados na alimentação diária da população brasileira, promovendo um consumo sustentável.
 
 ### 3.2.3 Limites do produto
-O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcelas do curso, pagamento a professore e agendamentos. O SCCA não contempla o atendimento a vários cursos de Sistemas de Informação de outras unidades da PUC Minas.
+O SCRCS não fornecerá serviços de entrega de alimentos, não gerenciará a venda de ingredientes ou produtos, e não incluirá funcionalidades de pagamento ou avaliações nutricionais detalhadas. O sistema se concentrará exclusivamente no cadastro e gestão de receitas e ingredientes.
 
 ### 3.2.4 Benefícios do produto
 
 | # | Benefício | Valor para o Cliente |
 |--------------------|------------------------------------|----------------------------------------|
-|1	| Facilidade no cadastro de dados |	Essencial |
-|2 | Facilidade na recuperação de informações | Essencial | 
-|3 | Segurança no cadastro de matrículas | Essencial | 
-|4	| Melhoria na comunicação com os alunos	| Recomendável | 
+|1	| Facilitação na busca de receitas sustentáveis |	Essencial |
+|2 | Promoção do aproveitamento de alimentos | Essencial | 
+|3 | Estímulo à comunidade através de compartilhamento | Essencial | 
+|4	| Acesso a informações sobre aproveitamento nutricional	| Recomendável |
 
 ## 3.3 Descrição geral do produto
 
